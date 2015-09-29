@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StartActionController {
 	@RequestMapping("/startaction")
-	public StartAction StopAction(@RequestParam(value="pinnr", defaultValue="0") int actionnr) {
-        return new StartAction(actionnr);}
+	public String startAction(@RequestParam(value="pinnr", defaultValue="0") int actionnr) {
+		new StartAction(actionnr);
+        return "to sender";}
 }

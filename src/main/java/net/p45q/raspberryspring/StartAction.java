@@ -2,9 +2,7 @@ package net.p45q.raspberryspring;
 
 public class StartAction {
 	int actionnr;
-
 	public StartAction(int actionnr) {
-		super();
 		this.actionnr = actionnr;
 		switch(actionnr)
 		{

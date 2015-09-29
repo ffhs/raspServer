@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StopActionController {
 	@RequestMapping("/stopaction")
-	public StopAction StopAction(@RequestParam(value="pinnr", defaultValue="0") int actionnr) {
-        return new StopAction(actionnr);}
-
+	public String StopAction(@RequestParam(value="pinnr", defaultValue="0") int actionnr) {
+        new StopAction(actionnr);
+        return "juhu";}
 }
